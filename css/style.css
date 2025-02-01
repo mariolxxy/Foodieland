@@ -95,16 +95,20 @@ nav ul a {
 }
 .middle {
   flex: 1;
-  padding: 20px;
+  /* padding: 20px; */
   position: relative;
-  /* background-color: #4a040f; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 0;
 }
-
+.photo9 {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
 .allmiddle {
   background-color: #e7fafe;
   display: flex;
@@ -112,10 +116,16 @@ nav ul a {
   justify-content: space-between;
   display: flex;
   position: relative;
-  width: 620px;
-  height: 660px;
+  width: 48.5%;
+  height: 100%;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+}
+@media (min-width: 1445) {
+  .allmiddle {
+    width: 900px;
+    height: 900px;
+  }
 }
 .badge {
   position: absolute;
